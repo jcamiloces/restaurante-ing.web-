@@ -20,9 +20,9 @@ El sistema está diseñado para interactuar con dos perfiles principales:
 Para garantizar la automatización, el flujo de información se define de la siguiente manera:
 
     Entrada (Inputs):
-     Selección de productos del menú por parte del usuario.
-     Datos de personalización del pedido (cantidades, especificaciones).
-     Confirmación de la orden.
+        Selección de productos del menú por parte del usuario.
+        Datos de personalización del pedido (cantidades, especificaciones).
+        Confirmación de la orden.
 
     Proceso (Processing):
         Cálculo automático del costo total del pedido.
