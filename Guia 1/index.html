@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Resto | Automatización Gastronómica</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SMART<span>RESTO</span></div>
+        <ul class="nav-links">
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#orden">Mi Pedido</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>La Revolución del Sabor</h1>
+            <p>Pide en segundos, disfruta al instante. Sin esperas, sin errores.</p>
+            <a href="#menu" class="btn-main">Explorar Menú</a>
+        </div>
+    </header>
+
+    <main id="menu">
+        <h2 class="section-title">Nuestra Selección</h2>
+        <div class="grid-menu">
+            <div class="card">
+                <div class="badge">Popular</div>
+                <h3>Combo Ejecutivo</h3>
+                <p>La opción perfecta para un almuerzo productivo.</p>
+                <p class="precio">$15.000</p>
+                <button class="btn-add" data-nombre="Combo Ejecutivo" data-precio="15000">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <h3>Menú Gastronómico</h3>
+                <p>Experiencia de autor con ingredientes locales.</p>
+                <p class="precio">$25.000</p>
+                <button class="btn-add" data-nombre="Menú Gastronómico" data-precio="25000">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <h3>Bebida Natural</h3>
+                <p>Fruta fresca del día, sin conservantes.</p>
+                <p class="precio">$5.000</p>
+                <button class="btn-add" data-nombre="Bebida Natural" data-precio="5000">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <section id="orden" class="cart-container">
+            <div class="cart-card">
+                <h3>Resumen de tu Orden</h3>
+                <ul id="lista-pedido"></ul>
+                <div class="cart-footer">
+                    <div class="total-box">
+                        <span>Total estimado</span>
+                        <span class="total-num">$<span id="total-pago">0</span></span>
+                    </div>
+                    <button id="btn-finalizar" class="btn-confirm" disabled>Confirmar Pedido</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
